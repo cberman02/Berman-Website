@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #881124;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #881124;
+}
+
+.header-left {
+    flex: 1;
+}
+
+.header-right {
+    flex: 1;
+    text-align: right;
+}
+
+.header-right p {
+    margin: 5px 0;
+}
+
+.header-banner a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.header-banner a:hover {
+    text-decoration: none;
+}
+
+nav {
+    background-color: #707170;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 150px 20px 20px; /* Adjust this value based on your header height */
+}
+
+.flex-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 40px; /* Add some space between sections */
+}
+
+.flex-section .text-content {
+    flex: 1;
+    margin-right: 50px;
+}
+
+.flex-section .image-content {
+    flex: 1;
+    text-align: left;
+}
+
+.flex-section .image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+section:not(.flex-section) .content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px; /* Add some space between sections */
+}
+
+section:not(.flex-section) .text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+section:not(.flex-section) .image-content {
+    flex: 1;
+    text-align: right;
+}
+
+section:not(.flex-section) .image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+.shrink-image {
+    width: 500px; /* Set your desired width */
+    height: auto; /* Maintains the aspect ratio */
+    margin-right: 350px;
+}
+
+.shrink-image-more {
+    width: 400px; /* Set your desired width */
+    height: auto; /* Maintains the aspect ratio */
+    margin-right: 350px;
+}
+.shrink-image-no-shift {
+    width: 400px; /* Set your desired width */
+    height: auto; /* Maintains the aspect ratio */
+}
