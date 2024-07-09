@@ -36,45 +36,21 @@
         <section id="thesis" class="content">
             <div class="text-content">
                 <h1>Public-Transit/Rideshare Partnerships: A Different Design</h1>
-                <p>One of the difficulties in 
+                <p>One of the difficulties in determining the actual treatment effect of public transit/rideshare partnerships 
+                    is that there is considerable exogeniety and variation in public transit ridership. Variables like seasonality, gas prices, fares, 
+                    construction, etc. can all impact ridership. I tried to control for that using urbanized area (UZA) and monthly fixed
+                    effects.
                 </p>
-            </div>
-            <div class="flex-section">
-                <div class = "text-content">
-                    <h3>Data</h3>
-                    <p>
-                        To find agencies and ridership numbers,
-                        I took ridership data from the National Transit Database (NTD) for each agency in the country, and identified what agencies implemented 
-                        partnerships at what time. I also used the American Census Survey (ACS) to find demographic information for each urbanized area (UZA).
-                        I linked the UZA demographic data with the UZA the transit agency was associated with in order to confirm that demographic
-                        characteristics were not driving ridership growth in agencies with a partnership versus agencies without.
-                    </p>
-                </div>
-                <div class="image-content">
-                    <img src="demo_plots.png" alt="Demographic Plots" class="shrink-image">
-                </div>
-            </div>
-            <h3>Methodology/Results</h3>
-            <p>
-                While I had initially planned on a standard difference-in-difference specification, the staggered timing forced me to look into a 
-                staggered difference-in-difference. This regression technique is susceptible to bias with unbalanced treatment and control groups, as 
-                well as to heterogeneous treatment effect, both of which my data exhibited. To combat this, I used interaction-weighted (IW) estimators 
-                (Sun and Abraham, "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects", 2021).
-            </p>
-            <div class="flex-section">
-                <div class = "text-content">
-                    <p>
-                        This method led to a finding of a 5% increase in transit ridership as a result of these partnerships. However, this increase 
-                        varies based on the agency. The cohort plot shows the different treatment effect by when the partnership was launched.
-                        The results of the regression can be found in the table.
-                    </p>
-                </div>
                 <div class="flex-section">
                     <div class="image-content">
-                        <img src="coho_plot.png" alt="Cohort Plots" class="shrink-image-no-shift">
+                        <img src="ridership_plot.png" alt="Ridership Plot" class="shrink-image">
                     </div>
-                    <div class="image-content">
-                        <img src="reg.png" alt="Regression" class="shrink-image-no-shift">
+                    <div class = "text-content">
+                        <p>
+                            The staggered timing and slight variation in partnership strategies (the treatment effect in this case) 
+                            also force me to use some more complex regression methods. These come with a need to make more stringent
+                            assumptions regarding pre-trends. 
+                        </p>
                     </div>
                 </div>      
             </div>
