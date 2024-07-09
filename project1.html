@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extension - Charles Berman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-banner">
+            <div class="header-left">
+                <h1>Charles Berman</h1>
+            </div>
+            <div class="header-right">
+                <p>Email: <a href="mailto:cberman02@gmail.com">cberman02@gmail.com</a></p>
+                <p>Github: <a href="https://github.com/cberman02">github.com/cberman02</a></p>
+                <p>Phone: (267) 264-3364</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="thesis.html">Thesis</a></li>
+                <li class="dropdown">
+                    <a href="#projects" class="dropbtn">Ongoing Projects</a>
+                    <div class="dropdown-content">
+                        <a href="#project1.html">Thesis Extension</a>
+                        <a href="#project2.html">S-4</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="thesis" class="content">
+            <div class="text-content">
+                <h1>Public-Transit/Rideshare Partnerships: A Different Design</h1>
+                <p>One of the difficulties in 
+                </p>
+            </div>
+            <div class="flex-section">
+                <div class = "text-content">
+                    <h3>Data</h3>
+                    <p>
+                        To find agencies and ridership numbers,
+                        I took ridership data from the National Transit Database (NTD) for each agency in the country, and identified what agencies implemented 
+                        partnerships at what time. I also used the American Census Survey (ACS) to find demographic information for each urbanized area (UZA).
+                        I linked the UZA demographic data with the UZA the transit agency was associated with in order to confirm that demographic
+                        characteristics were not driving ridership growth in agencies with a partnership versus agencies without.
+                    </p>
+                </div>
+                <div class="image-content">
+                    <img src="demo_plots.png" alt="Demographic Plots" class="shrink-image">
+                </div>
+            </div>
+            <h3>Methodology/Results</h3>
+            <p>
+                While I had initially planned on a standard difference-in-difference specification, the staggered timing forced me to look into a 
+                staggered difference-in-difference. This regression technique is susceptible to bias with unbalanced treatment and control groups, as 
+                well as to heterogeneous treatment effect, both of which my data exhibited. To combat this, I used interaction-weighted (IW) estimators 
+                (Sun and Abraham, "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects", 2021).
+            </p>
+            <div class="flex-section">
+                <div class = "text-content">
+                    <p>
+                        This method led to a finding of a 5% increase in transit ridership as a result of these partnerships. However, this increase 
+                        varies based on the agency. The cohort plot shows the different treatment effect by when the partnership was launched.
+                        The results of the regression can be found in the table.
+                    </p>
+                </div>
+                <div class="flex-section">
+                    <div class="image-content">
+                        <img src="coho_plot.png" alt="Cohort Plots" class="shrink-image-no-shift">
+                    </div>
+                    <div class="image-content">
+                        <img src="reg.png" alt="Regression" class="shrink-image-no-shift">
+                    </div>
+                </div>      
+            </div>
+        </section>
+        
+    </main>
+</body>
+</html>
