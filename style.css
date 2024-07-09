@@ -57,6 +57,7 @@ nav ul {
 }
 
 nav ul li {
+    position: relative;
     margin: 0 15px;
 }
 
@@ -68,6 +69,34 @@ nav ul li a {
 
 nav ul li a:hover {
     text-decoration: underline;
+}
+
+/* Dropdown container */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #707170;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 main {
@@ -83,7 +112,7 @@ main {
 
 .flex-section .text-content {
     flex: 1;
-    margin-right: 50px;
+    margin-right: 20px;
 }
 
 .flex-section .image-content {
@@ -119,16 +148,4 @@ section:not(.flex-section) .image-content img {
 
 .shrink-image {
     width: 500px; /* Set your desired width */
-    height: auto; /* Maintains the aspect ratio */
-    margin-right: 350px;
-}
-
-.shrink-image-more {
-    width: 400px; /* Set your desired width */
-    height: auto; /* Maintains the aspect ratio */
-    margin-right: 350px;
-}
-.shrink-image-no-shift {
-    width: 400px; /* Set your desired width */
-    height: auto; /* Maintains the aspect ratio */
-}
+    height: auto; /* Maintains the aspect ratio
