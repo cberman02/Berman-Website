@@ -149,3 +149,4 @@ section:not(.flex-section) .image-content img {
 .shrink-image {
     width: 500px; /* Set your desired width */
     height: auto; /* Maintains the aspect ratio
+}
