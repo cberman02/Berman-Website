@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-left: 30px;
+    margin-right: 30px;
     padding: 0;
 }
 
@@ -11,6 +12,8 @@ header {
     width: 100%;
     top: 0;
     z-index: 1000;
+    margin-left: -30px;
+    margin-right: -30px;
 }
 
 .header-banner {
@@ -71,31 +74,30 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
+/* Dropdown Menu */
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #707170;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-    z-index: 1;
+    background-color: #f9f9f9;
     min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-    color: #fff;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #575757;
+    background-color: #f1f1f1;
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 main {
     padding: 150px 20px 20px; /* Adjust this value based on your header height */
 }
@@ -145,5 +147,10 @@ section:not(.flex-section) .image-content img {
 
 .shrink-image {
     width: 500px; /* Set your desired width */
+    height: auto; /* Maintains the aspect ratio */
+}
+
+.shrink-image-more {
+    width: 450px; /* Set your desired width */
     height: auto; /* Maintains the aspect ratio */
 }

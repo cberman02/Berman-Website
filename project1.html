@@ -25,34 +25,37 @@
                 <li class="dropdown">
                     <a href="#projects" class="dropbtn">Ongoing Projects</a>
                     <div class="dropdown-content">
-                        <a href="#project1.html">Thesis Extension</a>
-                        <a href="#project2.html">S-4</a>
+                        <a href="project1.html">Thesis Extension</a>
+                        <!--<a href="project2.html">S-4</a>-->
                     </div>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="thesis" class="content">
+        <section id="project1" class="content">
             <div class="text-content">
-                <h1>Public-Transit/Rideshare Partnerships: A Different Design</h1>
-                <p>One of the difficulties in determining the actual treatment effect of public transit/rideshare partnerships 
-                    is that there is considerable exogeniety and variation in public transit ridership. Variables like seasonality, gas prices, fares, 
-                    construction, etc. can all impact ridership. I tried to control for that using urbanized area (UZA) and monthly fixed
-                    effects.
-                </p>
-                <div class="flex-section">
-                    <div class="image-content">
-                        <img src="ridership_plot.png" alt="Ridership Plot" class="shrink-image">
-                    </div>
+                <h1>Public-Transit/Rideshare Partnerships: Issues in Measurement</h1>
+            
                     <div class = "text-content">
+                        <p>One of the difficulties in determining the actual treatment effect of public transit/rideshare partnerships 
+                            is that there is considerable exogeniety and variation in public transit ridership. Variables like seasonality, gas prices, fares, 
+                            construction, etc. can all impact ridership.
+                        </p>
                         <p>
+                            <img src="ridership_plot.png" alt="Ridership Plot" style="float:left;width:350px;height:100%;">
                             The staggered timing and slight variation in partnership strategies (the treatment effect in this case) 
-                            also force me to use some more complex regression methods. These come with a need to make more stringent
-                            assumptions regarding pre-trends. 
+                            also forced me to use some more complex regression methods. These come with a need to make more stringent
+                            assumptions regarding pre-trends. I also introduced urbanized area (UZA) and month/year fixed effects to try
+                            and control for exogenous variables.
+                            
                         </p>
                     </div>
-                </div>      
+                <h1>A simpler design and <em>On the Mode of Communication of Cholera</em> </h1>  
+                <div class = "text-content">
+                    <p>The standard difference-in-difference design comes from 
+                    </p>
+                </div>
             </div>
         </section>
         

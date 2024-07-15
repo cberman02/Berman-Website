@@ -25,8 +25,8 @@
                 <li class="dropdown">
                     <a href="#projects" class="dropbtn">Ongoing Projects</a>
                     <div class="dropdown-content">
-                        <a href="#project1.html">Thesis Extension</a>
-                        <a href="#project2.html">S-4</a>
+                        <a href="project1.html">Thesis Extension</a>
+                        <!--<a href="project2.html">S-4</a>-->
                     </div>
                 </li>
             </ul>
@@ -43,44 +43,44 @@
             </div>
             <div class="flex-section">
                 <div class = "text-content">
-                    <h3>Data</h3>
                     <p>
+                        <img src="demo_plots.png" alt="Demographic Plots" style="float:inline-end;width:380px;height:100%;">
+                        <h1>Data</h1>
                         To find agencies and ridership numbers,
                         I took ridership data from the National Transit Database (NTD) for each agency in the country, and identified what agencies implemented 
                         partnerships at what time. I also used the American Census Survey (ACS) to find demographic information for each urbanized area (UZA).
                         I linked the UZA demographic data with the UZA the transit agency was associated with in order to confirm that demographic
                         characteristics were not driving ridership growth in agencies with a partnership versus agencies without.
                     </p>
-                </div>
-                <div class="image-content">
-                    <img src="demo_plots.png" alt="Demographic Plots" class="shrink-image">
-                </div>
-            </div>
-            <h3>Methodology/Results</h3>
-            <p>
-                While I had initially planned on a standard difference-in-difference specification, the staggered timing forced me to look into a 
-                staggered difference-in-difference. This regression technique is susceptible to bias with unbalanced treatment and control groups, as 
-                well as to heterogeneous treatment effect, both of which my data exhibited. To combat this, I used interaction-weighted (IW) estimators 
-                (Sun and Abraham, "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects", 2021).
-            </p>
-            <div class="flex-section">
-                <div class = "text-content">
+                    <p>
+                        <h1>Methodology/Results</h1>
+                        While I had initially planned on a standard difference-in-difference specification, the staggered timing forced me to look into a 
+                        staggered difference-in-difference. This regression technique is susceptible to bias with unbalanced treatment and control groups, as 
+                        well as to heterogeneous treatment effect, both of which my data exhibited. To combat this, I used interaction-weighted (IW) estimators 
+                        (Sun and Abraham, "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects", 2021).
+                        <img src="coho_plot.png" alt="Cohort Plots" style="float:inline-start;width:auto;height:450px;">
+                        <img src="reg.png" alt="Regression" style="float:left;width:auto;height:450px;">
+                    </p>
                     <p>
                         This method led to a finding of a 5% increase in transit ridership as a result of these partnerships. However, this increase 
                         varies based on the agency. The cohort plot shows the different treatment effect by when the partnership was launched.
                         The results of the regression can be found in the table.
                     </p>
                     <p>
-                        For more information, check out my full thesis, along with my code and the associated datasets, at my thesis repository on
-                        Github: <a href="https://github.com/cberman02/Thesis" target="_blank">Thesis Repo</a>.
+                        For more information, check out my full thesis, along with my code and the associated datasets, at my thesis repository
+                        <a href="https://github.com/cberman02/Thesis" target="_blank">here</a>.
                     </p>
+                </div>
+            </div>
+            
+            <div class="flex-section">
+                <div class = "text-content">
+                    
                 </div>
                 <div class="flex-section">
                     <div class="image-content">
-                        <img src="coho_plot.png" alt="Cohort Plots" class="shrink-image">
                     </div>
                     <div class="image-content">
-                        <img src="reg.png" alt="Regression" class="shrink-image">
                     </div>
                 </div>      
             </div>
